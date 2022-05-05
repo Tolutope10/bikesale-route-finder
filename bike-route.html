@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <script src="Jsfile.js" defer>
+
+        </script>
+        <title>BIKE SALE AND ROUTE FINDER</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+
+    <body>
+        <div class="frame" id="container">
+            <header class="">
+                <nav class="main">
+                    <a href="backup-index.html">
+                        <img class="logo" src="images/my-logo.png" alt="Cannot display">
+                    </a>
+
+                    <ul class="pages">
+                        <li><a href="home.html" class="sale"><b>HOME</b></a></li>
+                        <li><a href="view-on-map.html" class="sale"><b>BIKE SALE</b></a></li>
+                        <li><a href="bike-repair.html" class="sale"><b>BIKE REPAIR</b></a></li>
+                        <li><a href="bike-route.html" class="active sale"><b>BIKE ROUTE</b></a></li>
+                    </ul>
+
+                    <form class="search">
+                        <input type="text" placeholder="Search here">
+                        <button><i id="" class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>Search</button>
+                    </form>
+
+                </nav>
+
+            </header>
+
+
+        </div>
+
+
+        <div id="home" class="tab-content">
+
+            <ul class="sideul">
+                <li class="has-dropdown"><button class="dropdown">BIKES BY TYPE</button>
+                    <div class="drop-down-menu">
+                        <a href="bikes-by-type.html">Electric Bikes</a>
+                        <a href="bikes-by-type.html">Non-Electric Bikes</a>
+                    </div>
+                </li>
+                <li class="has-dropdown"><button class="dropdown">BIKES BY MAKE</button>
+                    <div class="drop-down-menu">
+                        <a href="bikes-by-make.html">BMX</a>
+                        <a href="bikes-by-make.html">Canyon Bikes</a>
+                        <a href="bikes-by-make.html">Dare Bikes</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="content-tab-target active">
+                <img src="images/home-pic.png" alt="Cannot display">
+            </div>
+
+        </div>
+
+        <div id="bike-sale" class="tab-content">
+
+            <ul class="sideul">
+
+                <li class="has-dropdown"><button class="dropdown active">SELECT VIEW</button>
+                    <div class="drop-down-menu">
+                        <a href="view-table.html">VIEW TABLE</a>
+                        <a href="map.html">VIEW ON MAP</a>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <div id="bike-repair" class="tab-content">
+
+            <ul class="sideul">
+
+                <li class="has-dropdown"><button class="dropdown active">SELECT VIEW</button>
+                    <div class="drop-down-menu">
+                        <a href="view-table.html">VIEW TABLE</a>
+                        <a href="map.html">VIEW ON MAP</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div id="bike-route" class="tab-content active">
+
+            <ul class="sideul">
+                <li class="tab">
+                    <button data-content-target="#bike-route-map" class="but active">VIEW ON MAP</button>
+                </li>
+            </ul>
+            <div id="bike-route-map" class="content-tab-target active">
+                <iframe
+                    src="https://opendata.bristol.gov.uk/explore/embed/dataset/cycle-network/map/?location=11,51.47784,-2.58227%26basemap=jawg.streets%26static=false%26datasetcard=false%26scrollWheelZoom=false"
+                    width="1000" height="500" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+
+
+
+
+        <footer>
+            <p>COPYRIGHT DDD ASSIGNMENT 2022</p>
+        </footer>
+    </body>
+
+</html>

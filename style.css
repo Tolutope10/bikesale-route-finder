@@ -1,0 +1,214 @@
+html{
+    font-family: Sans-Serif;
+    font-weight: bold;
+}
+
+.tab-content{
+    display: none;
+    
+}
+
+.tab-content.active{
+    display: block;
+    
+}
+/* .tab-content{
+    position: relative;
+} */
+
+.tab-content .sideul button.active, .sideul li a:hover,
+.sideul li button:hover{
+    background-color: #C80502;
+}
+.sideul .but.active{
+    background-color: #C80502;
+}
+
+.frame{
+    max-width: 100%;
+    overflow: auto;
+    background-image: url(images/bike21.jpg);
+    background-size: 100%;
+    opacity: 1;
+}
+
+.logo{
+    float: left;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    max-width: 200px;
+    height: 70px;
+}
+
+.pages{
+    margin: 0px auto;
+    width:1200px;
+    list-style-type: none;
+    padding-top: 50px;
+}
+
+.tab{
+    cursor: pointer;
+}
+.tab.active{
+    color: #C80502;
+}
+
+.tab:hover{
+    color: #C80502;
+}
+
+
+.tab-content img{
+    float: right;
+    margin-top: -450px;
+    margin-right: 70px;
+    width: 1000px;
+    height: 400px;
+}
+
+.content-tab-target {
+    /* opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: none;
+}
+
+.content-tab-target.active {
+    /* opacity: 1; */
+    display: block;
+}
+
+.tab-content iframe{
+    float: right;
+    margin-top: -450px; 
+     margin-right: 70px;
+    width: 1000px;
+    height: 400px;
+}
+
+
+.pages li{
+    width: 200px;
+    height: 20px;
+    float: left;
+    margin: 0px 0px;
+    color: white;
+    font-family: Sans-Serif;
+    font-weight: bold;
+    
+}
+
+.pages a{
+    text-decoration: none;
+    color: white;
+    font-family: Sans-Serif;
+    font-weight: bold;
+    
+}
+
+.pages :hover{
+    color: #C80502;
+}
+.pages .sale.active {
+    color: #C80502;
+}
+
+
+
+
+
+
+.search{
+    margin-top: -7px;
+    margin-bottom: 20px;
+    float: right;
+    margin-right:30px;
+    margin-left: -100px;
+}
+
+input[type=text]{
+    padding: 7px;
+    border: none;
+    
+}
+
+form button{
+    float: right;
+    background: #D945A6;
+    color: white;
+    border-radius:0 5px 5px 0;
+    cursor:pointer;
+    padding: 5.5px;
+}
+#icon{
+    color: blue;
+}
+
+
+
+.sideul{
+    min-height: 70vh;
+    background-color: #38ACFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 15vw;
+    padding: 0;
+    gap: 20px;
+    padding-top: 30px;
+    margin-top: 0px;
+}
+.sideul li{
+    height: 29px;
+    list-style-type: none;
+}
+
+.sideul li a, .sideul li button{
+    
+    background: #D945A6;
+    color: white;
+    border-radius:0 0px 0px 0;
+    padding: 10px;
+    text-decoration: none;
+    border: 10px;
+    width: 10rem;
+    outline: none;
+    cursor: pointer;
+}
+
+
+footer{
+    background-color:#F96A03;
+    margin-top: -20px;
+    padding: 10px;
+    
+}
+footer p {
+    text-align: center;
+    color:white ;
+}
+.has-dropdown{
+    position: relative;
+}
+.drop-down-menu{
+    display: none;
+    background-color: white;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 2;
+}
+.has-dropdown:hover .drop-down-menu{
+    display: block;
+}
+
+.drop-down-menu a{
+    display: block;
+}
